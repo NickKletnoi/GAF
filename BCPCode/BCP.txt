@@ -1,0 +1,38 @@
+
+---------------- EXPORT --------------------------------------------------------------
+bcp ERAEDWDEV.dbo.DimDate out C:\Dims\DimDate.txt -c -T
+bcp ERAEDWDEV.dbo.DimProduct out C:\Dims\DimProduct.txt -c -T
+bcp ERAEDWDEV.dbo.DimCustomer out C:\Dims\DimCustomer.txt -c -T
+bcp ERAEDWDEV.dbo.DimTerritory out C:\Dims\DimTerritory.txt -c -T
+bcp ERAEDWDEV.dbo.DimSellingCompany out C:\Dims\DimSellingCompany.txt -c -T
+bcp ERAEDWDEV.dbo.DimDistributionLocation out C:\Dims\DimDistributionLocation.txt -c -T
+bcp ERAEDWDEV.dbo.DimManufacturingLocation out C:\Dims\DimManufacturingLocation.txt -c -T
+bcp ERAEDWDEV.dbo.DimUser out C:\Dims\DimUser.txt -c -T
+bcp ERAEDWDEV.dbo.FactBacklog out C:\Facts\FactBacklog.txt -c -T
+bcp ERAEDWDEV.dbo.FactSalesPlan out C:\Facts\FactSalesPlan.txt -c -T
+bcp ERAEDWDEV.dbo.FactSecurity out C:\Facts\FactSecurity.txt -c -T
+bcp ERAEDWDEV.dbo.FactSecurityCustomer out C:\Facts\FactSecurityCustomer.txt -c -T
+bcp "select *  from ERAEDWDEV.dbo.FactSales where AccountingDateSK < '2011-04-18' and AccountingDateSK > '2011-04-01'" queryout C:\Facts\FactSales.txt -c -T
+
+-------------- IMPORT ----------------------------------------------------------------
+
+bcp ERAEDWDEV.dbo.DimDate in C:\Dims\DimDate.txt -c -T
+bcp ERAEDWDEV.dbo.DimProduct in C:\Dims\DimProduct.txt -c -T
+bcp ERAEDWDEV.dbo.DimCustomer in C:\Dims\DimCustomer.txt -c -T
+bcp ERAEDWDEV.dbo.DimTerritory in C:\Dims\DimTerritory.txt -c -T
+bcp ERAEDWDEV.dbo.DimSellingCompany in C:\Dims\DimSellingCompany.txt -c -T
+bcp ERAEDWDEV.dbo.DimDistributionLocation in C:\Dims\DimDistributionLocation.txt -c -T
+bcp ERAEDWDEV.dbo.DimManufacturingLocation in C:\Dims\DimManufacturingLocation.txt -c -T
+bcp ERAEDWDEV.dbo.DimUser in C:\Dims\DimUser.txt -c -T
+bcp ERAEDWDEV.dbo.FactBacklog in C:\Facts\FactBacklog.txt -c -T
+bcp ERAEDWDEV.dbo.FactSalesPlan in C:\Facts\FactSalesPlan.txt -c -T
+bcp ERAEDWDEV.dbo.FactSecurity in C:\Facts\FactSecurity.txt -c -T
+bcp ERAEDWDEV.dbo.FactSecurityCustomer in C:\Facts\FactSecurityCustomer.txt -c -T
+bcp ERAEDWDEV.dbo.FactSales in C:\Facts\FactSales.txt -c -T
+
+--------------------------------------------------------------------------------------
+
+bcp ERAEDWPROD.dbo.Connections in C:\Users\nkletnoi\Documents\linkedin_Connections\linkedin_Connections.txt -c -T
+bcp ERAEDWPROD.dbo.Connections out C:\Users\nkletnoi\Documents\linkedin_Connections\linkedin_Connections.txt -c -T
+
+-------------------------------------------------------------------------------------

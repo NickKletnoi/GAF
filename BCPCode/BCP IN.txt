@@ -1,0 +1,14 @@
+BCP IN
+---------------
+
+bcp ERAEDWPROD.dbo.DimDate in C:\Temp\DimDate.txt -c -T
+bcp ERAEDWPROD.dbo.StgSpProduct in C:\Temp\StgSpProduct.txt -c -T
+bcp ERAEDWPROD.dbo.StgSpUser in C:\Temp\StgSpUser.txt -c
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_LOCATION_PERMISSION in C:\Temp\StgCpPSFT1USER_LOCATION_PERMISSION.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_ROLE in C:\Temp\StgCpPSFT1USER_ROLE.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_ACCESS in C:\Temp\StgCpPSFT1USER_ACCESS.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1MANPOWER_LIST_317 in C:\Temp\StgCpPSFT1MANPOWER_LIST_317.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1HOMEDEPOT_STORE_LIST in C:\Temp\StgCpPSFT1HOMEDEPOT_STORE_LIST.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1HOMEDEPOT_LINK in C:\Temp\StgCpPSFT1HOMEDEPOT_LINK.txt -c -T
+
+--

@@ -1,0 +1,15 @@
+
+--------------
+BCP OUT
+-------------------------------------------------------------------------------------------------------
+bcp ERAEDWPROD.dbo.DimDate out D:\PrePopulatedTables\DimDate.txt -c -T
+bcp ERAEDWPROD.dbo.StgSpProduct out D:\PrePopulatedTables\StgSpProduct.txt -c -T
+bcp ERAEDWPROD.dbo.StgSpUser out D:\PrePopulatedTables\StgSpUser.txt -c
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_LOCATION_PERMISSION out D:\PrePopulatedTables\StgCpPSFT1USER_LOCATION_PERMISSION.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_ROLE out D:\PrePopulatedTables\StgCpPSFT1USER_ROLE.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1USER_ACCESS out D:\PrePopulatedTables\StgCpPSFT1USER_ACCESS.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1MANPOWER_LIST_317 out D:\PrePopulatedTables\StgCpPSFT1MANPOWER_LIST_317.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1HOMEDEPOT_STORE_LIST out D:\PrePopulatedTables\StgCpPSFT1HOMEDEPOT_STORE_LIST.txt -c -T
+bcp ERAEDWPROD.dbo.StgCpPSFT1HOMEDEPOT_LINK out D:\PrePopulatedTables\StgCpPSFT1HOMEDEPOT_LINK.txt -c -T
+
+----------------------------------------------------------------------------------------------------------
