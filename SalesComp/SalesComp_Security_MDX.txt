@@ -1,0 +1,16 @@
+
+
+Security 
+
+
+MDX in the 'Allow member set' on the Key attribute (Sales Employee KY) Of the SalesPerson Dimension
+----------
+NonEmpty ([SALESPERSON].[SALES EMPLOYEE KY].[All].children,(FILTER( [EMPLOYEE].[NTLOGIN].members, [EMPLOYEE].[NTLOGIN].CurrentMember.Name = USERNAME ), [Measures].[SECURITY ACCESS CD]) )
+
+
+
+MDX in the 'Allow member set' on the name attribute (Geography Name) of the Sales Geo Dimension
+-------------
+NonEmpty (
+ [SALES GEO].[Geography Name].Children  ,(FILTER( [EMPLOYEE].[NTLOGIN].members  , [EMPLOYEE].[NTLOGIN].CurrentMember.Name = USERNAME
+ ), [Measures].[SECURITY GEO ACCESS CD]) )
